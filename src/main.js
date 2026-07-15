@@ -38,6 +38,43 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ------------------------------------------------------------------
+     1b) MOBILE NAV MENU
+     Toggles the dropdown menu on small screens and closes it again
+     whenever a link inside it is tapped or the viewport grows past
+     the md breakpoint.
+  ------------------------------------------------------------------ */
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  function closeMobileMenu() {
+    if (!mobileMenu) return;
+    mobileMenu.classList.add('hidden');
+    if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+  }
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      mobileMenuBtn.setAttribute('aria-expanded', String(!isOpen));
+      sizeSections();
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        closeMobileMenu();
+        sizeSections();
+      });
+    });
+
+    // Collapse back to the desktop nav automatically if the window
+    // is resized/rotated past the md breakpoint while menu is open.
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) closeMobileMenu();
+    });
+  }
+
+  /* ------------------------------------------------------------------
      2) GENERIC HORIZONTAL CAROUSEL (Sports & Games / Meta Movement)
      Any button with [data-carousel-prev] / [data-carousel-next]
      scrolls the track with the matching id by one "page".
@@ -153,30 +190,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ------------------------------------------------------------------
      4) "IT'S FOR" AUDIENCE TABS
-     Highlights the selected audience and swaps a line of copy.
+     Highlights the selected audience button.
   ------------------------------------------------------------------ */
-  const audienceCopy = {
-    Athletes: 'Compete, train, and connect with fellow athletes across every sport in the MetaGames.',
-    Gamers: 'Rise through the ranks in esports titles and digital arenas built for competitive gamers.',
-    Students: 'Represent your school and build skills through mind sports, esports, and physical events.',
-    Professionals: 'Network, sponsor, and showcase talent through official MetaGames partnerships.',
-    Nations: 'Host events, field national teams, and put your country on the global MetaGames stage.'
-  };
-
   const audienceButtons = document.querySelectorAll('.audience-btn');
-  const audienceCopyEl = document.getElementById('audience-copy');
 
   audienceButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       audienceButtons.forEach((b) => {
-        b.classList.remove('bg-white', 'text-slate-800');
+        b.classList.remove('bg-white', 'text-blue-700');
         b.classList.add('bg-blue-900', 'text-white');
       });
       btn.classList.remove('bg-blue-900', 'text-white');
-      btn.classList.add('bg-white', 'text-slate-800');
-      if (audienceCopyEl) {
-        audienceCopyEl.textContent = audienceCopy[btn.dataset.audience] || '';
-      }
+      btn.classList.add('bg-white', 'text-blue-700');
     });
   });
 
@@ -194,29 +219,43 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Black', hex: '#111827', meaning: 'Esports' }
   ];
 
-  let emblemIndex = 3; // starts on Green, matching the wireframe
   const emblemColorEl = document.getElementById('emblem-color');
   const emblemMeaningEl = document.getElementById('emblem-meaning');
   const emblemSwatchEl = document.getElementById('emblem-swatch');
+  const emblemWheelEl = document.getElementById('emblem-wheel');
   const emblemPrevBtn = document.getElementById('emblem-prev');
   const emblemNextBtn = document.getElementById('emblem-next');
 
+  // Each wedge is 360 / stops = 60deg wide, centered at (i*60 + 30) in the
+  // conic-gradient's own coordinates (0deg = top, clockwise). The arrow sits
+  // at the wheel's east/right edge, i.e. screen-angle 90deg. So the rotation
+  // that brings wedge i's center to the arrow is: 90 - (i*60 + 30) = 60 - 60*i.
+  //
+  // emblemStep is an unbounded counter (not wrapped) so the wheel always
+  // keeps spinning the direction it was pushed instead of snapping back;
+  // emblemIndex (wrapped) is derived from it for looking up color/meaning.
+  const emblemWedgeDeg = 360 / emblemStops.length;
+  let emblemStep = 3; // starts on Green, matching the wireframe
+
   function renderEmblem() {
+    const emblemIndex = ((emblemStep % emblemStops.length) + emblemStops.length) % emblemStops.length;
     const stop = emblemStops[emblemIndex];
+    const rotation = 60 - emblemWedgeDeg * emblemStep;
     if (emblemColorEl) emblemColorEl.textContent = stop.name;
     if (emblemMeaningEl) emblemMeaningEl.textContent = stop.meaning;
     if (emblemSwatchEl) emblemSwatchEl.style.backgroundColor = stop.hex;
+    if (emblemWheelEl) emblemWheelEl.style.transform = `rotate(${rotation}deg)`;
   }
 
   if (emblemPrevBtn) {
     emblemPrevBtn.addEventListener('click', () => {
-      emblemIndex = (emblemIndex - 1 + emblemStops.length) % emblemStops.length;
+      emblemStep -= 1;
       renderEmblem();
     });
   }
   if (emblemNextBtn) {
     emblemNextBtn.addEventListener('click', () => {
-      emblemIndex = (emblemIndex + 1) % emblemStops.length;
+      emblemStep += 1;
       renderEmblem();
     });
   }
