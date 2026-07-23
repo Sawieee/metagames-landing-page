@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MetaGames</title>
+<link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white">
+
+<div id="site-header" class="sticky top-0 z-50">
+  
+  <div class="bg-[#0f172a] flex items-center h-8 relative border-b border-slate-800">
+    <div class="flex h-1.5 w-[30%] gap-1 pl-1 absolute left-0">
+      <div class="flex-1 bg-blue-600"></div>
+      <div class="flex-1 bg-yellow-400"></div>
+      <div class="flex-1 bg-white"></div>
+      <div class="flex-1 bg-black"></div>
+    </div>
+    
+    <div class="flex-1 text-center">
+      <h1 class="tracking-[0.4em] text-[15px] font-bold text-white uppercase">METAGAMES</h1>
+    </div>
+
+    <div class="flex h-1.5 w-[30%] gap-1 pr-1 absolute right-0">
+      <div class="flex-1 bg-green-600"></div>
+      <div class="flex-1 bg-blue-600"></div>
+      <div class="flex-1 bg-yellow-400"></div>
+      <div class="flex-1 bg-red-600"></div>
+      <div class="flex-1 bg-white"></div>
+    </div>
+  </div>
+
+  <nav class="bg-[#1e40af] text-white text-xs md:text-sm flex items-center justify-between px-4 sm:px-6 py-3 shadow-lg">
+    
+    <div class="flex items-center shrink-0">
+      <img src="assets/IMAGES/LOGO.png" class="h-14 sm:h-16 w-auto object-contain" alt="MetaGames logo">
+    </div>
+
+    <div class="hidden md:flex items-center gap-6 font-medium">
+      <a href="#home" class="font-semibold px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Home</a>
+      <a href="#what-are" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">What Are MetaGames</a>
+      <a href="#news" class="relative px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">News &amp; Updates <span class="text-red-500 absolute -top-1 -right-2 text-lg leading-none">&bull;</span></a>
+      <a href="#sports-games" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Sports &amp; Games</a>
+      <a href="#meta-movement" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Meta Movement</a>
+      <a href="#emblem" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Emblem &amp; Meaning</a>
+      <a href="#theme-song" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Official Theme Song</a>
+      <a href="#host-nations" class="px-4 py-1.5 rounded-full hover:bg-white hover:text-slate-900 transition">Host Nations</a>
+    </div>
+
+    <div class="hidden sm:block shrink-0">
+      <a href="#join" class="bg-[#ef4444] hover:bg-red-600 transition text-white px-6 py-2 rounded-full font-bold shadow-md whitespace-nowrap">Join MetaGames</a>
+    </div>
+
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 w-9 h-9 shrink-0" aria-label="Toggle menu" aria-expanded="false">
+      <span class="block w-6 h-0.5 bg-white transition"></span>
+      <span class="block w-6 h-0.5 bg-white transition"></span>
+      <span class="block w-6 h-0.5 bg-white transition"></span>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-[#1e3a8a] text-white text-sm shadow-lg">
+    <div class="flex flex-col divide-y divide-blue-800">
+      <a href="#home" class="px-5 py-3 font-semibold hover:bg-blue-800 transition">Home</a>
+      <a href="#what-are" class="px-5 py-3 hover:bg-blue-800 transition">What Are MetaGames</a>
+      <a href="#news" class="px-5 py-3 hover:bg-blue-800 transition">News &amp; Updates</a>
+      <a href="#sports-games" class="px-5 py-3 hover:bg-blue-800 transition">Sports &amp; Games</a>
+      <a href="#meta-movement" class="px-5 py-3 hover:bg-blue-800 transition">Meta Movement</a>
+      <a href="#emblem" class="px-5 py-3 hover:bg-blue-800 transition">Emblem &amp; Meaning</a>
+      <a href="#theme-song" class="px-5 py-3 hover:bg-blue-800 transition">Official Theme Song</a>
+      <a href="#host-nations" class="px-5 py-3 hover:bg-blue-800 transition">Host Nations</a>
+      <a href="#join" class="px-5 py-3 font-bold text-red-400 hover:bg-blue-800 transition">Join MetaGames</a>
+    </div>
+  </div>
+</div>
+
+<div id="scroll-container">
+
+<section id="home" class="screen-section relative bg-[#0b1120] text-white flex flex-col justify-center items-center pt-8 pb-16 px-6">
+  
+  <div class="absolute inset-0 z-0">
+    <img src="https://placehold.co/1920x1080/1e293b/475569?text=Stadium+Crowd+Background" class="w-full h-full object-cover" alt="Stadium crowd background">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0b1120]/80 via-[#0b1120]/85 to-[#0b1120]"></div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-6xl mx-auto flex flex-col items-center">
+    
+    <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-3 text-center tracking-tight drop-shadow-md">Welcome to the MetaGames</h2>
+    
+    <div class="flex items-center justify-center w-full max-w-3xl mb-4 gap-4 opacity-90">
+      <div class="h-[1px] bg-slate-400 flex-1"></div>
+      <p class="italic text-lg md:text-xl font-semibold text-center">Where Sports, Games, and Digital Worlds Unite</p>
+      <div class="h-[1px] bg-slate-400 flex-1"></div>
+    </div>
+    
+    <p class="text-sm md:text-base text-slate-300 max-w-3xl text-center leading-relaxed mb-10">
+      MetaGames is a global movement that brings together traditional sports, esports,
+      digital sports, and virtual experiences into one unified international event.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mb-12">
+      <div class="bg-white text-slate-800 rounded-3xl p-5 shadow-xl hover:-translate-y-1 transition transform duration-300 flex flex-col">
+        <div class="h-44 w-full flex items-center justify-center mb-4">
+          <img src="assets/IMAGES/18.png" class="max-h-full object-contain" alt="Learn what MetaGames is">
+        </div>
+        <button class="w-full bg-[#2563eb] hover:bg-blue-600 text-white py-3.5 rounded-xl font-bold shadow-md mt-auto">Learn What MetaGames Is</button>
+      </div>
+
+      <div class="bg-white text-slate-800 rounded-3xl p-5 shadow-xl hover:-translate-y-1 transition transform duration-300 flex flex-col">
+        <div class="h-44 w-full flex items-center justify-center mb-4">
+          <img src="assets/IMAGES/1.png" class="max-h-full object-contain" alt="Explore sports and games">
+        </div>
+        <button class="w-full bg-[#2563eb] hover:bg-blue-600 text-white py-3.5 rounded-xl font-bold shadow-md mt-auto">Explore Sports &amp; Games</button>
+      </div>
+
+      <div class="bg-white text-slate-800 rounded-3xl p-5 shadow-xl hover:-translate-y-1 transition transform duration-300 flex flex-col">
+        <div class="h-44 w-full flex items-center justify-center mb-4">
+          <img src="assets/IMAGES/2.png" class="max-h-full object-contain" alt="Join the movement">
+        </div>
+        <button class="w-full bg-[#2563eb] hover:bg-blue-600 text-white py-3.5 rounded-xl font-bold shadow-md mt-auto">Join the Movement</button>
+      </div>
+    </div>
+
+    <div class="w-full max-w-5xl relative mt-4">
+      <div class="bg-gradient-to-r from-[#0344a6] to-[#0b64f0] rounded-2xl overflow-hidden flex flex-col sm:flex-row relative shadow-2xl sm:h-72">
+
+        <div class="w-full sm:w-7/12 order-2 sm:order-1 p-6 sm:p-10 flex flex-col justify-center z-20">
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 drop-shadow-sm">What are MetaGames?</h3>
+          <p class="text-sm sm:text-[15px] text-blue-50 leading-relaxed sm:pr-6 drop-shadow-sm">
+            MetaGames is not just one sport or one game. It is a combination of
+            physical sports, esports, mind games, and digital competitions happening
+            together under one global platform.
+          </p>
+        </div>
+
+        <div class="relative sm:absolute sm:right-0 sm:top-0 sm:bottom-0 order-1 sm:order-2 w-full sm:w-6/12 h-44 sm:h-auto z-10 overflow-hidden">
+          <div class="hidden sm:block absolute inset-y-0 left-0 w-2/3 bg-gradient-to-r from-[#0b64f0] via-[#0b64f0]/50 to-transparent z-10"></div>
+          <img src="assets/IMAGES/3.png" class="w-full h-full object-cover" alt="What are MetaGames background">
+        </div>
+      </div>
+
+      <div class="absolute -bottom-4 sm:-bottom-6 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[85%] grid grid-cols-4 shadow-xl font-bold text-center tracking-wide sm:tracking-widest text-xs sm:text-lg z-30">
+        <div class="bg-[#22c55e] text-white py-2 sm:py-4 rounded-bl-md">LIFE</div>
+        <div class="bg-[#3b82f6] text-white py-2 sm:py-4">TIME</div>
+        <div class="bg-[#facc15] text-white py-2 sm:py-4">GAME</div>
+        <div class="bg-[#ef4444] text-white py-2 sm:py-4 rounded-br-md">META</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="bg-black border-y border-slate-800 overflow-hidden py-2">
+  <div id="marquee-track" class="flex whitespace-nowrap text-xs md:text-sm font-semibold tracking-wide text-white w-max will-change-transform">
+    <div class="flex shrink-0">
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+    </div>
+    <div class="flex shrink-0" aria-hidden="true">
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+      <span class="mx-4">Mastering the MetaGames of Life, One Move at a Time.</span>
+      <span class="mx-4">&bull;</span>
+    </div>
+  </div>
+</div>
+
+<section id="news" class="screen-section bg-[#0b1120] px-6 sm:px-12 md:px-16 py-6 sm:py-8 flex flex-col justify-center">
+  <div class="w-full max-w-6xl">
+    <h3 class="font-bold text-2xl sm:text-3xl text-white mb-5 sm:mb-6">News &amp; Updates</h3>
+  </div>
+  <div class="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+    <img src="assets/IMAGES/news-image-enhanced.webp" onerror="this.outerHTML='<div class=\'img-fallback w-full h-72 sm:h-96 md:h-[30rem] text-base\'>News &amp; Updates Image</div>'" class="w-full h-72 sm:h-96 md:h-[30rem] object-cover" alt="News and updates">
+  </div>
+</section>
+
+<section id="sports-games" class="screen-section flex flex-col justify-center">
+  <div class="bg-[#0f172a] px-6 sm:px-12 md:px-16 py-5 sm:py-6 w-full">
+    <h3 class="font-bold text-2xl sm:text-3xl text-white">Sports &amp; Games</h3>
+  </div>
+  <div class="relative w-full">
+    <div id="sg-track" class="flex overflow-hidden snap-x snap-mandatory scroll-smooth w-full">
+
+      <div class="relative min-w-full snap-start h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] shrink-0">
+        <img src="assets/IMAGES/9.png" onerror="this.outerHTML='<div class=\'img-fallback h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] w-full\'>Image</div>'" class="absolute inset-0 w-full h-full object-cover" alt="Sports and games overview">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0344a6]/95 via-[#0b64f0]/75 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between px-6 sm:px-12 md:px-16 py-10 sm:py-14 text-white">
+          <div>
+            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl">Sports &amp; Games</h4>
+            <p class="text-sm sm:text-base md:text-lg mt-2 text-slate-100">Physical &amp; Olympic-style sports</p>
+          </div>
+          <button class="bg-white text-blue-700 hover:bg-slate-100 transition font-semibold text-sm md:text-base px-6 py-3 rounded shadow-md w-fit">View Details</button>
+        </div>
+      </div>
+
+      <div class="relative min-w-full snap-start h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] shrink-0">
+        <img src="assets/IMAGES/10.png" onerror="this.outerHTML='<div class=\'img-fallback h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] w-full\'>Image</div>'" class="absolute inset-0 w-full h-full object-cover" alt="Mind sports chess">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0344a6]/95 via-[#0b64f0]/75 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between px-6 sm:px-12 md:px-16 py-10 sm:py-14 text-white">
+          <div>
+            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl">Mind Sports</h4>
+            <p class="text-sm sm:text-base md:text-lg mt-2 text-slate-100">Chess, Scrabble, Sudoku, etc.</p>
+          </div>
+          <button class="bg-white text-blue-700 hover:bg-slate-100 transition font-semibold text-sm md:text-base px-6 py-3 rounded shadow-md w-fit">View Details</button>
+        </div>
+      </div>
+
+      <div class="relative min-w-full snap-start h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] shrink-0">
+        <img src="assets/IMAGES/11.png" onerror="this.outerHTML='<div class=\'img-fallback h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] w-full\'>Image</div>'" class="absolute inset-0 w-full h-full object-cover" alt="Electronic sports esports">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0344a6]/95 via-[#0b64f0]/75 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between px-6 sm:px-12 md:px-16 py-10 sm:py-14 text-white">
+          <div>
+            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl">Electronic Sports (Esports)</h4>
+            <p class="text-sm sm:text-base md:text-lg mt-2 text-slate-100">MOBA, FPS, RTS, Fighting Games, BR, MMORPG</p>
+          </div>
+          <button class="bg-white text-blue-700 hover:bg-slate-100 transition font-semibold text-sm md:text-base px-6 py-3 rounded shadow-md w-fit">View Details</button>
+        </div>
+      </div>
+
+      <div class="relative min-w-full snap-start h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] shrink-0">
+        <img src="assets/IMAGES/12.png" onerror="this.outerHTML='<div class=\'img-fallback h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] w-full\'>Image</div>'" class="absolute inset-0 w-full h-full object-cover" alt="Digital and virtual sports">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0344a6]/95 via-[#0b64f0]/75 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between px-6 sm:px-12 md:px-16 py-10 sm:py-14 text-white">
+          <div>
+            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl">Digital &amp; Virtual Sports</h4>
+            <p class="text-sm sm:text-base md:text-lg mt-2 text-slate-100 leading-snug">Digital Motorsports &middot; Digital Combat &middot; VR &amp; AR Sports</p>
+          </div>
+          <button class="bg-white text-blue-700 hover:bg-slate-100 transition font-semibold text-sm md:text-base px-6 py-3 rounded shadow-md w-fit">View Details</button>
+        </div>
+      </div>
+
+      <div class="relative min-w-full snap-start h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] shrink-0">
+        <img src="assets/IMAGES/13.png" onerror="this.outerHTML='<div class=\'img-fallback h-80 sm:h-96 md:h-[28rem] lg:h-[34rem] w-full\'>Image</div>'" class="absolute inset-0 w-full h-full object-cover" alt="Multi-cultural and indigenous sports">
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0344a6]/95 via-[#0b64f0]/75 to-transparent"></div>
+        <div class="relative z-10 h-full flex flex-col justify-between px-6 sm:px-12 md:px-16 py-10 sm:py-14 text-white">
+          <div>
+            <h4 class="font-bold text-3xl sm:text-4xl md:text-5xl">Multi-Cultural &amp; Indigenous Sports</h4>
+            <p class="text-sm sm:text-base md:text-lg mt-2 text-slate-100">Traditional games from different cultures</p>
+          </div>
+          <button class="bg-white text-blue-700 hover:bg-slate-100 transition font-semibold text-sm md:text-base px-6 py-3 rounded shadow-md w-fit">View Details</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button data-carousel-prev="sg-track" class="flex absolute left-4 sm:left-10 md:left-16 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-slate-100 transition rounded-full w-10 h-10 sm:w-12 sm:h-12 items-center justify-center shadow-lg text-blue-700 text-xl">&lsaquo;</button>
+    <button data-carousel-next="sg-track" class="flex absolute right-4 sm:right-10 md:right-16 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-slate-100 transition rounded-full w-10 h-10 sm:w-12 sm:h-12 items-center justify-center shadow-lg text-blue-700 text-xl">&rsaquo;</button>
+  </div>
+
+  <div class="bg-[#0b1120] w-full py-4 flex justify-center gap-2">
+    <div id="sg-dots" class="flex justify-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-white"></span>
+      <span class="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
+      <span class="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
+      <span class="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
+      <span class="w-2.5 h-2.5 rounded-full bg-slate-600"></span>
+    </div>
+  </div>
+</section>
+
+<section id="meta-movement" class="screen-section bg-[#0b1120] py-6 sm:py-8 flex flex-col justify-center" style="min-height: auto;">
+  <div class="w-full max-w-6xl px-6 sm:px-12 md:px-16">
+    <div class="flex items-center gap-4 sm:gap-6">
+      <h3 class="font-bold text-2xl sm:text-3xl text-white whitespace-nowrap">The Meta Movement</h3>
+      <div class="h-2 sm:h-2.5 flex-1 flex rounded overflow-hidden">
+        <div class="flex-1 bg-green-600"></div>
+        <div class="flex-1 bg-blue-600"></div>
+        <div class="flex-1 bg-yellow-400"></div>
+        <div class="flex-1 bg-red-600"></div>
+        <div class="flex-1 bg-white"></div>
+        <div class="flex-1 bg-black"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-full max-w-6xl mx-auto px-6 sm:px-12 md:px-16">
+    <h4 class="text-lg sm:text-xl font-bold mt-5 mb-5">The Rise of the Meta Movement (2025&ndash;2027)</h4>
+
+    <div class="flex items-center gap-3 sm:gap-4">
+      <button data-carousel-prev="mm-track" class="shrink-0 bg-white hover:bg-slate-100 transition text-blue-700 rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shadow-lg text-xl">&lsaquo;</button>
+
+      <div id="mm-track" class="flex gap-3 sm:gap-4 flex-1 overflow-hidden">
+        <div class="w-[46%] sm:w-1/2 shrink-0 bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
+          <img src="assets/IMAGES/14.png" onerror="this.outerHTML='<div class=\'img-fallback h-56 sm:h-72 w-full\'>Image</div>'" class="h-56 sm:h-72 w-full object-cover" alt="Physical fitness">
+          <div class="p-3 sm:p-4">
+            <p class="text-sm sm:text-lg font-bold text-blue-700">Physical fitness</p>
+            <p class="text-[10px] sm:text-sm text-blue-600 leading-snug mt-1">Promoting healthy, active lifestyles through sports and movement, encouraging people of all ages to stay strong, energized, and well.</p>
+          </div>
+        </div>
+        <div class="flex-1 min-w-[50%] grid grid-cols-2 grid-rows-2 gap-3 sm:gap-4">
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
+            <img src="assets/IMAGES/15.png" onerror="this.outerHTML='<div class=\'img-fallback h-16 sm:h-28 w-full\'>Image</div>'" class="h-16 sm:h-28 w-full object-cover" alt="Digital innovation">
+            <div class="p-2 sm:p-3">
+              <p class="text-[10px] sm:text-sm font-bold text-blue-700">Digital Innovation</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
+            <img src="assets/IMAGES/16.png" onerror="this.outerHTML='<div class=\'img-fallback h-16 sm:h-28 w-full\'>Image</div>'" class="h-16 sm:h-28 w-full object-cover" alt="Cultural unity">
+            <div class="p-2 sm:p-3">
+              <p class="text-[10px] sm:text-sm font-bold text-blue-700">Cultural Unity</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
+            <img src="assets/IMAGES/17.png" onerror="this.outerHTML='<div class=\'img-fallback h-16 sm:h-28 w-full\'>Image</div>'" class="h-16 sm:h-28 w-full object-cover" alt="Fair play and inclusivity">
+            <div class="p-2 sm:p-3">
+              <p class="text-[10px] sm:text-sm font-bold text-blue-700">Fair Play &amp; Inclusivity</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg shadow-lg flex items-center justify-center">
+            <p class="text-base sm:text-2xl font-bold text-white">View more</p>
+          </div>
+        </div>
+      </div>
+
+      <button data-carousel-next="mm-track" class="shrink-0 bg-white hover:bg-slate-100 transition text-blue-700 rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shadow-lg text-xl">&rsaquo;</button>
+    </div>
+  </div>
+
+  <div class="w-full bg-blue-700 px-6 sm:px-12 md:px-16 py-4 mt-8 flex items-center gap-2 sm:gap-3 flex-wrap">
+    <span class="text-base sm:text-lg font-bold text-white shrink-0">It's for:</span>
+    <button data-audience="Athletes" class="audience-btn flex-1 min-w-[6rem] text-center bg-white text-blue-700 px-4 sm:px-5 py-2 rounded-md font-bold text-xs sm:text-base">Athletes</button>
+    <button data-audience="Gamers" class="audience-btn flex-1 min-w-[6rem] text-center bg-white text-blue-700 px-4 sm:px-5 py-2 rounded-md font-bold text-xs sm:text-base">Gamers</button>
+    <button data-audience="Students" class="audience-btn flex-1 min-w-[6rem] text-center bg-white text-blue-700 px-4 sm:px-5 py-2 rounded-md font-bold text-xs sm:text-base">Students</button>
+    <button data-audience="Professionals" class="audience-btn flex-1 min-w-[6rem] text-center bg-white text-blue-700 px-4 sm:px-5 py-2 rounded-md font-bold text-xs sm:text-base">Professionals</button>
+    <button data-audience="Nations" class="audience-btn flex-1 min-w-[6rem] text-center bg-white text-blue-700 px-4 sm:px-5 py-2 rounded-md font-bold text-xs sm:text-base">Nations</button>
+  </div>
+</section>
+
+<section id="emblem" class="screen-section px-4 sm:px-10 md:px-16 py-10 flex flex-col justify-center gap-6 sm:gap-8">
+  <div class="max-w-5xl mx-auto w-full flex flex-col gap-6 sm:gap-8">
+
+    <h3 class="font-bold text-xl sm:text-2xl md:text-3xl text-center sm:text-left sm:pl-[17rem] md:pl-[22rem]">MetaGames Emblem &amp; Symbolism</h3>
+
+    <div class="relative w-full flex flex-col items-center sm:grid sm:grid-cols-1">
+
+      <div class="relative sm:col-start-1 sm:row-start-1 sm:self-center sm:justify-self-start w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full shrink-0 overflow-hidden shadow-xl z-20 -mb-6 sm:mb-0">
+        <div id="emblem-wheel" class="emblem-wheel-spin absolute inset-0" style="background: conic-gradient(#dc2626 0deg 60deg, #facc15 60deg 120deg, #ffffff 120deg 180deg, #16a34a 180deg 240deg, #2563eb 240deg 300deg, #111827 300deg 360deg);"></div>
+        <div class="absolute inset-[14%] rounded-full bg-white flex items-center justify-center p-2 shadow-lg">
+          <img src="assets/IMAGES/LOGO.png" onerror="this.outerHTML='<div class=\'img-fallback w-full h-full rounded-full\'>Logo</div>'" class="w-full h-full object-contain rounded-full" alt="MetaGames emblem center logo">
+        </div>
+      </div>
+
+      <div class="hidden sm:flex sm:col-start-1 sm:row-start-1 sm:self-center sm:justify-self-start sm:ml-[13rem] md:ml-[17rem] w-12 h-12 sm:w-12 sm:h-12 md:w-16 md:h-16 z-30 items-center justify-center">
+        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-lg" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <polygon points="0,0 55,0 100,50 55,100 0,100"></polygon>
+        </svg>
+      </div>
+
+      <div class="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 rounded-2xl flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-5 sm:pl-[17rem] md:pl-[22rem] sm:pr-6 md:pr-10 sm:py-8 w-full sm:col-start-1 sm:row-start-1 sm:self-center">
+        <div class="min-w-0 flex-1 text-center sm:text-left">
+          <p id="emblem-color" class="font-bold text-2xl sm:text-3xl leading-tight">Green</p>
+          <p id="emblem-meaning" class="text-sm sm:text-base text-slate-100">Multi-Cultural Sports</p>
+          <p class="italic font-semibold text-sm sm:text-lg mt-3 sm:mt-4">One symbol. Many sports. One global community.</p>
+        </div>
+        <div class="flex gap-3 sm:gap-4 shrink-0">
+          <button id="emblem-prev" aria-label="Previous color" class="w-9 h-9 sm:w-11 sm:h-11 bg-white text-blue-800 rounded-full flex items-center justify-center shadow hover:bg-slate-100 transition">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button id="emblem-next" aria-label="Next color" class="w-9 h-9 sm:w-11 sm:h-11 bg-white text-blue-800 rounded-full flex items-center justify-center shadow hover:bg-slate-100 transition">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="theme-song" class="w-full mt-6 sm:mt-10">
+    <div class="max-w-5xl w-full">
+      <h3 class="font-bold text-2xl sm:text-3xl text-white mb-5 sm:mb-6">Official Theme Song</h3>
+    </div>
+
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-stretch gap-6 sm:gap-10">
+
+      <div class="relative w-full sm:w-[45%] aspect-video shrink-0 rounded-lg overflow-hidden">
+        <img src="assets/IMAGES/19.png" onerror="this.outerHTML='<div class=\'img-fallback h-full w-full\'>Video / Cover</div>'" class="w-full h-full object-cover" alt="Legends Rise in the Meta Games cover art">
+        <button id="theme-play" aria-label="Play theme song" class="absolute inset-0 flex items-center justify-center group">
+          <span class="w-14 h-14 bg-black/40 group-hover:bg-black/60 transition rounded-full flex items-center justify-center text-lg">&#9654;</span>
+        </button>
+      </div>
+
+      <div class="flex-1 min-w-0 flex gap-4 sm:gap-6">
+        <div class="flex-1 min-w-0 flex flex-col min-h-0">
+          <p class="font-bold text-xl sm:text-2xl">&ldquo;Legends Rise in the Meta Games&rdquo;</p>
+          <p class="font-bold text-base sm:text-lg text-slate-200 mb-4 sm:mb-5">Meta Games OST</p>
+
+          <div id="lyrics-scroll" class="no-scrollbar overflow-y-auto max-h-64 sm:max-h-none sm:flex-1 sm:min-h-0 space-y-4 pr-2">
+            <div>
+              <p class="font-bold text-base sm:text-lg mb-1">Verse 1</p>
+              <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                Here is where we carve our name<br>
+                This is more than just a game<br>
+                We level up with each new quest<br>
+                and prove ourselves as the very best.
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-base sm:text-lg mb-1">Verse 2</p>
+              <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                Our minds are sharp, our skills refined<br>
+                our passion for victory enshrined<br>
+                in this world where anything can be<br>
+                We rise to challenge, wild and free
+              </p>
+            </div>
+            <div>
+              <p class="font-bold text-base sm:text-lg mb-1">Chorus</p>
+              <p class="text-sm sm:text-base text-slate-400 italic leading-relaxed">
+                Full chorus lyrics coming soon.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="lyrics-scrollbar-track" class="w-1 shrink-0 bg-slate-700 rounded relative cursor-pointer">
+          <div id="lyrics-scrollbar-thumb" class="absolute left-0 top-0 w-full bg-blue-500 rounded transition-[height,top] duration-100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="host-nations" class="screen-section flex flex-col justify-center">
+  <div class="bg-blue-600 text-center font-bold text-lg sm:text-xl text-white py-3 sm:py-4 px-4">Host Nations &amp; Partners</div>
+
+  <div class="bg-[#0b1120] px-6 sm:px-12 md:px-16 py-8 sm:py-10">
+    <h4 class="font-bold text-lg sm:text-xl text-white mb-4 sm:mb-5">Host Cities:</h4>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 gap-5 sm:gap-8">
+      <div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+        <img src="assets/IMAGES/20.png" onerror="this.outerHTML='<div class=\'img-fallback h-full w-full\'>Image</div>'" class="w-full h-full object-cover" alt="Manila, Philippines">
+        <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-blue-900/95 via-blue-900/40 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 text-sm sm:text-base font-bold px-3 sm:px-4 py-3 sm:py-4">Manila, Philippines</div>
+      </div>
+      <div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+        <img src="assets/IMAGES/21.PNG" onerror="this.outerHTML='<div class=\'img-fallback h-full w-full\'>Image</div>'" class="w-full h-full object-cover" alt="Xinjiang, China">
+        <div class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-red-900/95 via-red-900/40 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 right-0 text-sm sm:text-base font-bold px-3 sm:px-4 py-3 sm:py-4">Xinjiang, China</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white text-slate-800 py-8 sm:py-12 text-center">
+    <h4 class="font-bold text-xl sm:text-2xl mb-6 sm:mb-8">Partners:</h4>
+    <div class="flex justify-center items-start gap-6 sm:gap-12 md:gap-16 flex-wrap px-4">
+      <div class="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 shrink-0 flex items-center justify-center">
+        <img src="assets/IMAGES/22.png" onerror="this.outerHTML='<div class=\'img-fallback w-full h-full rounded-full\'>ESWF</div>'" class="max-w-full max-h-full object-contain" alt="Esports World Federation logo">
+      </div>
+      <div class="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 shrink-0 flex items-center justify-center">
+        <img src="assets/IMAGES/23.png" onerror="this.outerHTML='<div class=\'img-fallback w-full h-full rounded-full\'>Game Sphere</div>'" class="max-w-full max-h-full object-contain" alt="Game Sphere logo">
+      </div>
+      <div class="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 shrink-0 flex items-center justify-center">
+        <img src="assets/IMAGES/24.png" onerror="this.outerHTML='<div class=\'img-fallback w-full h-full rounded-full\'>Partner</div>'" class="max-w-full max-h-full object-contain" alt="Partner logo">
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-blue-700 px-6 sm:px-12 md:px-16 py-8 sm:py-10 text-xs sm:text-sm">
+    <div class="flex items-center justify-center gap-6 sm:gap-10 md:gap-14 flex-wrap max-w-4xl mx-auto">
+      <img src="assets/IMAGES/LOGO.png" onerror="this.outerHTML='<div class=\'img-fallback h-20 sm:h-24 md:h-28 w-20 sm:w-24 md:w-28 rounded-full\'>Logo</div>'" class="h-20 sm:h-24 md:h-28 w-auto object-contain shrink-0" alt="MetaGames logo">
+      <div>
+        <p class="font-bold mb-1">Quick Links:</p>
+        <ul class="space-y-0.5 text-slate-200">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#home" class="hover:underline">What Are MetaGames</a></li>
+          <li><a href="#news" class="hover:underline">News &amp; Updates</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-0.5 text-slate-200 mt-4 sm:mt-5">
+          <li><a href="#sports-games" class="hover:underline">Sports &amp; Games</a></li>
+          <li><a href="#meta-movement" class="hover:underline">Meta Movement</a></li>
+          <li><a href="#emblem" class="hover:underline">Emblem &amp; Meaning</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="space-y-0.5 text-slate-200 mt-4 sm:mt-5">
+          <li><a href="#theme-song" class="hover:underline">Official Theme Song</a></li>
+          <li><a href="#host-nations" class="hover:underline">Host Nations</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="bg-black text-[10px] sm:text-xs text-slate-400 flex justify-between px-6 sm:px-12 md:px-16 py-2 sm:py-3 w-full flex-wrap gap-1">
+    <span>&copy; 2025 MetaGames All Rights Reserved.</span>
+    <span>Designed &amp; Developed by: BB BB Advertising and Digital Solutions Inc.</span>
+  </div>
+</section>
+
+</div><script src="main.js"></script>
+</body>
+</html>
